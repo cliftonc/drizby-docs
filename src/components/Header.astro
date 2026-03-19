@@ -5,3 +5,11 @@ import Default from "@astrojs/starlight/components/Header.astro";
 <Default {...Astro.props}>
   <slot />
 </Default>
+
+<style is:global>
+  /* Ensure title wrapper doesn't constrain the site title group */
+  .title-wrapper {
+    flex-shrink: 0 !important;
+    overflow: visible !important;
+  }
+</style>

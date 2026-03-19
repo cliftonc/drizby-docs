@@ -1,38 +1,45 @@
 ---
 import { logos } from 'virtual:starlight/user-images';
 import config from 'virtual:starlight/user-config';
-const { siteTitle } = Astro.locals.starlightRoute;
-const siteTitleHref = '/docs/getting-started/';
 ---
 
-<a href={siteTitleHref} class="site-title sl-flex">
-	{
-		config.logo && logos.dark && (
-			<img
-				alt={config.logo.alt}
-				src={logos.dark.src}
-				width={logos.dark.width}
-				height={logos.dark.height}
-			/>
-		)
-	}
-	<span class:list={{ 'sr-only': config.logo?.replacesTitle }} translate="no">
-		{siteTitle}
-	</span>
-</a>
+<div class="site-title-group">
+	<a href="/" class="site-title sl-flex">
+		{
+			config.logo && logos.dark && (
+				<img
+					alt={config.logo.alt}
+					src={logos.dark.src}
+					width={logos.dark.width}
+					height={logos.dark.height}
+				/>
+			)
+		}
+		<span translate="no">Drizby</span>
+	</a>
+	<span class="separator">|</span>
+	<a href="/docs/getting-started/" class="docs-link" translate="no">Docs</a>
+</div>
 
 <style>
+	.site-title-group {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		white-space: nowrap;
+		min-width: 0;
+		flex-shrink: 0;
+	}
 	.site-title {
+		display: flex;
 		align-items: center;
 		gap: 0.5rem;
 		text-decoration: none;
-		white-space: nowrap;
-		min-width: 0;
 	}
 	.site-title:hover {
-		color: var(--sl-color-text);
+		opacity: 0.85;
 	}
-	span {
+	.site-title span {
 		font-size: 1.2rem;
 		font-weight: 700;
 		background: linear-gradient(135deg, var(--sl-color-text) 0%, #4f46e5 100%);
@@ -46,5 +53,21 @@ const siteTitleHref = '/docs/getting-started/';
 		width: auto;
 		object-fit: contain;
 		filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.3));
+	}
+	.separator {
+		color: var(--sl-color-gray-3);
+		font-size: 1.2rem;
+		font-weight: 300;
+		user-select: none;
+	}
+	.docs-link {
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: var(--sl-color-gray-2);
+		text-decoration: none;
+		transition: color 0.15s;
+	}
+	.docs-link:hover {
+		color: var(--sl-color-text);
 	}
 </style>
