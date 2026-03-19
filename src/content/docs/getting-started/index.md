@@ -5,6 +5,8 @@ sidebar:
   order: 0
 ---
 
+![Drizby home screen](/docs/images/drizby_1.png)
+
 Drizby is an open-source AI analytics platform powered by [drizzle-cube](https://www.drizzle-cube.dev). It provides dashboards, agentic AI notebooks, a visual analysis builder, and a full semantic layer — all in a single self-hostable application.
 
 ## Key Features

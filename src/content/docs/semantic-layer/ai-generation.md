@@ -1,6 +1,8 @@
 ---
 title: AI Cube Generation
 description: Use AI to generate semantic cubes from your schemas
+sidebar:
+  order: 3
 ---
 
 Drizby can automatically generate cube definitions from your Drizzle schemas using AI. This gives you a starting point that you can then refine.

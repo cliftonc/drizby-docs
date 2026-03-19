@@ -3,6 +3,8 @@ title: MCP Server
 description: Model Context Protocol server for AI agents
 ---
 
+![MCP with Claude](/docs/images/claude_mcp.png)
+
 Drizby includes a built-in MCP (Model Context Protocol) server with OAuth 2.1 authentication. AI assistants like Claude, VS Code Copilot, and Cursor can query your semantic layer directly.
 
 ## Setup

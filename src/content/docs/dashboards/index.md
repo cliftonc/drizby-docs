@@ -1,11 +1,11 @@
 ---
-sidebar:
-  order: 0
 title: Dashboards
 description: Build drag-and-drop dashboards
----
 sidebar:
   order: 0
+---
+
+![Drizby dashboard](/docs/images/drizby_2.png)
 
 Drizby includes a full dashboard builder with drag-and-drop grid layout, resizable widgets, and a variety of chart types.
 

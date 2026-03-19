@@ -1,11 +1,11 @@
 ---
-sidebar:
-  order: 0
 title: AI Notebooks
 description: Multi-turn AI notebooks for data exploration
----
 sidebar:
   order: 0
+---
+
+![AI Notebook](/docs/images/drizby_3.png)
 
 Drizby's agentic AI notebooks let you ask questions about your data in plain English. The AI generates SQL queries through the semantic layer, produces charts and tables, and supports multi-turn conversations.
 
