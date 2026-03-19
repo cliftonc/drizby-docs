@@ -1,0 +1,56 @@
+/* Drizby docs theme — matches drizby.com brand (indigo accent) */
+
+:root {
+  /* Indigo accent matching drizby.com --accent: #6366f1 */
+  --sl-color-accent-low: #312e81;
+  --sl-color-accent: #6366f1;
+  --sl-color-accent-high: #a5b4fc;
+
+  --sl-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Layout */
+  --sl-sidebar-width: 17rem;
+  --sl-content-width: 55rem;
+}
+
+/* Dark mode overrides */
+:root[data-theme="dark"] {
+  --sl-color-bg: #0f1117;
+  --sl-color-bg-nav: rgba(15, 17, 23, 0.85);
+  --sl-color-bg-sidebar: #0f1117;
+  --sl-color-hairline: #2a2d3a;
+  --sl-color-text: #e1e4eb;
+  --sl-color-text-accent: #a5b4fc;
+}
+
+/* Light mode overrides */
+:root[data-theme="light"] {
+  --sl-color-bg: #f8f9fc;
+  --sl-color-bg-nav: rgba(248, 249, 252, 0.85);
+  --sl-color-bg-sidebar: #f8f9fc;
+  --sl-color-hairline: #e2e4ea;
+  --sl-color-text: #1a1d27;
+  --sl-color-accent-low: #eef2ff;
+  --sl-color-accent: #6366f1;
+  --sl-color-accent-high: #4338ca;
+}
+
+/* Nav backdrop blur */
+.header {
+  backdrop-filter: blur(12px);
+}
+
+/* Content images */
+.sl-markdown-content img {
+  border-radius: 8px;
+  border: 1px solid var(--sl-color-hairline);
+  max-width: 100%;
+}
+
+/* Inline code */
+.sl-markdown-content :not(pre) > code {
+  background: var(--sl-color-accent-low);
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
