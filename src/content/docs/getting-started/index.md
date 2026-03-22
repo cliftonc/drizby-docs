@@ -9,6 +9,10 @@ sidebar:
 
 Drizby is an open-source AI analytics platform powered by [drizzle-cube](https://www.drizzle-cube.dev). It provides dashboards, agentic AI notebooks, a visual analysis builder, and a full semantic layer — all in a single self-hostable application.
 
+:::tip[Want to Embed Analytics in Your Own App?]
+If you're building a product and want to embed analytics directly as native React components, check out [Drizzle Cube](https://www.drizzle-cube.dev) — the open-source semantic layer and embeddable analytics library that powers Drizby.
+:::
+
 ## Key Features
 
 - **AI-Powered Notebooks** — Ask questions in plain English. Multi-turn AI notebooks generate charts, tables, and insights automatically.
