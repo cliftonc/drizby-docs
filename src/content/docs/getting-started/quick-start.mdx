@@ -3,11 +3,13 @@ title: Quick Start
 description: Get Drizby running in 60 seconds
 ---
 
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
 ## Docker (Recommended)
 
 Run Drizby with a single command:
 
-```bash
+```sh
 docker run -p 3461:3461 -v drizby-data:/app/data ghcr.io/cliftonc/drizby:main
 ```
 
@@ -21,13 +23,14 @@ Skip the setup entirely — deploy a fully managed instance in seconds at [cloud
 
 ## From Source
 
-```bash
-git clone https://github.com/cliftonc/drizby.git
-cd drizby
-npm install
-npm run setup    # Generate migrations, run them, seed demo data
-npm run dev      # Start client (3460) + server (3461) with hot reload
+```sh
+git clone https://github.com/cliftonc/drizby.git && cd drizby
+npm install && npm run setup && npm run dev
 ```
+
+## Watch the Quickstart
+
+<YouTube id="ZscgFhS-wxw" title="Drizby Quickstart — Up and Running in 60 Seconds" />
 
 ## First Steps
 
