@@ -1,10 +1,10 @@
-/* Drizby docs theme — matches drizby.com brand (indigo accent) */
+/* Drizby docs theme — matches drizby.com brand (teal accent) */
 
 :root {
-  /* Indigo accent matching drizby.com --accent: #6366f1 */
-  --sl-color-accent-low: #312e81;
-  --sl-color-accent: #6366f1;
-  --sl-color-accent-high: #a5b4fc;
+  /* Teal accent matching drizby.com --accent: #0891b2 */
+  --sl-color-accent-low: #164e63;
+  --sl-color-accent: #0891b2;
+  --sl-color-accent-high: #67e8f9;
 
   --sl-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
@@ -20,7 +20,7 @@
   --sl-color-bg-sidebar: #0f1117;
   --sl-color-hairline: #2a2d3a;
   --sl-color-text: #e1e4eb;
-  --sl-color-text-accent: #a5b4fc;
+  --sl-color-text-accent: #67e8f9;
 }
 
 /* Light mode overrides */
@@ -30,9 +30,9 @@
   --sl-color-bg-sidebar: #f8f9fc;
   --sl-color-hairline: #e2e4ea;
   --sl-color-text: #1a1d27;
-  --sl-color-accent-low: #eef2ff;
-  --sl-color-accent: #6366f1;
-  --sl-color-accent-high: #4338ca;
+  --sl-color-accent-low: #ecfeff;
+  --sl-color-accent: #0891b2;
+  --sl-color-accent-high: #0e7490;
 }
 
 /* Nav backdrop blur */
